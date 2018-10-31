@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
+        private int x = 0; private int y = 0;
+        
         private int panel1ColorR = 44;
         private int panel1ColorG = 62;
         private int panel1ColorB = 80;
@@ -24,22 +27,42 @@ namespace WindowsFormsApp3
         private int bufferColorG = 62;
         private int bufferColorB = 80;
 
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
         public Form1()
-        {
+        {            
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
             button1.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
             button2.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
-            button3.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
+            button3.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);            
             button4.BackColor = Color.FromArgb(aquaColorR, aquaColorG, aquaColorB);
             timer1.Interval = 20;
             timer2.Interval = 20;
-            timer3.Interval = 20;
+            timer3.Interval = 20;            
+            
             //button1.BackColor = Color.FromArgb(29,210,175);
             //button2.BackColor = Color.FromArgb(29, 210, 175);
             //button3.BackColor = Color.FromArgb(29, 210, 175);
         }
-      
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle,0x112, 0xf012, 0);
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                this.Location = new System.Drawing.Point(this.Location.X + (e.X - x), this.Location.Y + (e.Y - y));
+            }
+        }
+
         private void ReverseTimerTickToChangeTheColor(object sender, EventArgs e)
         {
             if (bufferColorR != panel1ColorR) bufferColorR++;
@@ -52,11 +75,11 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userControl11.BringToFront();
+            userControl12.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             userControl21.BringToFront();
         }
 
@@ -172,6 +195,9 @@ namespace WindowsFormsApp3
             button3.FlatAppearance.BorderColor = Color.FromArgb(bufferColorR, bufferColorG + 30, bufferColorB);
         }
 
-        
+        private void exit1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,3 +47,15 @@ C:\Users\БаракпаевО\Desktop\2222\WindowsFormsApp3\WindowsFormsApp3\obj
 C:\Users\БаракпаевО\Desktop\2222\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\БаракпаевО\Desktop\2222\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\Users\БаракпаевО\Desktop\2222\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.RollUp.resources
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.UserControl1.resources
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.UserControl2.resources
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\БаракпаевО\Desktop\UIForRaimbek-master\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Exit.resources
