@@ -38,15 +38,16 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.exit2 = new WindowsFormsApp3.Exit();
-            this.userControl21 = new WindowsFormsApp3.UserControl2();
+            this.userControl13 = new Login.UserControl1();
             this.userControl12 = new WindowsFormsApp3.UserControl1();
+            this.userControl21 = new WindowsFormsApp3.UserControl2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -147,12 +148,22 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // exit2
+            // userControl13
             // 
-            this.exit2.Location = new System.Drawing.Point(874, 0);
-            this.exit2.Name = "exit2";
-            this.exit2.Size = new System.Drawing.Size(100, 23);
-            this.exit2.TabIndex = 4;
+            this.userControl13.BackColor = System.Drawing.SystemColors.Control;
+            this.userControl13.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userControl13.Location = new System.Drawing.Point(0, 0);
+            this.userControl13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.userControl13.Name = "userControl13";
+            this.userControl13.Size = new System.Drawing.Size(974, 557);
+            this.userControl13.TabIndex = 8;
+            // 
+            // userControl12
+            // 
+            this.userControl12.Location = new System.Drawing.Point(200, 29);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(774, 557);
+            this.userControl12.TabIndex = 7;
             // 
             // userControl21
             // 
@@ -162,22 +173,15 @@
             this.userControl21.Size = new System.Drawing.Size(774, 557);
             this.userControl21.TabIndex = 6;
             // 
-            // userControl12
-            // 
-            this.userControl12.Location = new System.Drawing.Point(200, 29);
-            this.userControl12.Name = "userControl12";
-            this.userControl12.Size = new System.Drawing.Size(774, 557);
-            this.userControl12.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(974, 557);
+            this.Controls.Add(this.userControl13);
             this.Controls.Add(this.userControl12);
             this.Controls.Add(this.userControl21);
-            this.Controls.Add(this.exit2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -202,11 +206,12 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
-        private Exit exit1;
+   
         private UserControl1 userControl11;
-        private Exit exit2;
+
         private UserControl2 userControl21;
         private UserControl1 userControl12;
+        private Login.UserControl1 userControl13;
     }
 }
 

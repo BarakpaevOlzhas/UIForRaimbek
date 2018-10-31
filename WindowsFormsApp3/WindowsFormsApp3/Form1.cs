@@ -35,6 +35,7 @@ namespace WindowsFormsApp3
         public Form1()
         {            
             InitializeComponent();
+            //userControl13.BringToFront();
             panel1.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
             button1.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
             button2.BackColor = Color.FromArgb(panel1ColorR, panel1ColorG, panel1ColorB);
@@ -42,7 +43,7 @@ namespace WindowsFormsApp3
             button4.BackColor = Color.FromArgb(aquaColorR, aquaColorG, aquaColorB);
             timer1.Interval = 20;
             timer2.Interval = 20;
-            timer3.Interval = 20;            
+            timer3.Interval = 20;
             
             //button1.BackColor = Color.FromArgb(29,210,175);
             //button2.BackColor = Color.FromArgb(29, 210, 175);
@@ -196,6 +197,11 @@ namespace WindowsFormsApp3
         }
 
         private void exit1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl13_Load(object sender, EventArgs e)
         {
 
         }
